@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Phudu";
+  src: url(fonts/webfontkit-20230408-223726/phudu-variablefont_wght-webfont.woff)
+    format("woff");
+}
+
+body {
+  height: 100vh;
+  margin: none;
+  background-image: url(images/4525052_3644.jpg);
+  background-size: contain;
+  font-family: "Phudu";
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 70%);
+  margin: auto;
+  width: clamp(1000px, 75%, 1300px);
+  padding: 70px;
+}
+
+.head {
+  width: 60rem;
+  font-size: 55px;
+  font-weight: bold;
+  color: rgb(15, 29, 82);
+  text-shadow: 0 0 6px white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head > div {
+  background-color: #ffffff;
+  text-decoration: overline;
+  text-decoration: underline;
+}
+
+#new-book-btn {
+  background-color: rgb(15, 29, 82);
+  font-family: "Phudu";
+  color: white;
+  margin: 30px;
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 22px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 6px white;
+}
+
+#new-book-btn:hover {
+  background-color: rgba(91, 108, 167, 0.7);
+  color: rgb(15, 29, 82);
+  font-weight: bolder;
+}
+
+#new-book-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid rgb(15, 29, 82);
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.popup {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-popup {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  z-index: 1;
+  font-size: 17px;
+  color: black;
+  border: 1px solid rgb(15, 29, 82);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.close-popup:hover {
+  background-color: rgb(15, 29, 82);
+  color: #ffffff;
+}
+
+.close-popup:active {
+  transform: scaleY(0.99);
+}
+
+form > input {
+  width: 350px;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid rgb(15, 29, 82);
+}
+
+#submit {
+  background-color: rgb(15, 29, 82);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  height: 35px;
+  font-family: "Phudu";
+  cursor: pointer;
+}
+
+#new-book-form input[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+table {
+  width: 60rem;
+  border-collapse: collapse;
+  border: 2px solid rgb(15, 29, 82);
+  letter-spacing: 1px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+thead td {
+  font-weight: 600;
+  background-color: rgb(225, 225, 235);
+}
+
+td,
+th {
+  border: 1px solid rgb(15, 29, 82);
+  padding: 10px 20px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(225, 225, 235);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(205, 206, 223);
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.toggle {
+  border: 1px solid rgb(15, 29, 82);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  height: 32px;
+  width: 60px;
+  font-weight: bold;
+  color: rgb(15, 29, 82);
+}
+
+.toggle:hover {
+  border: none;
+  background-color: rgb(15, 29, 82);
+  color: white;
+}
+
+.toggle:active {
+  transform: scale(0.97);
+}
+
+.remove {
+  background-color: rgb(189, 66, 66);
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  height: 32px;
+  width: 80px;
+}
+
+.remove:hover {
+  border: 1px solid rgb(189, 66, 66);
+  background-color: white;
+  color: rgb(189, 66, 66);
+}
+
+.remove:active {
+  transform: scale(0.97);
+}
